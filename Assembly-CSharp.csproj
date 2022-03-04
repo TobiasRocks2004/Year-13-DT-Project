@@ -63,9 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scriptable Objects\ChemicalItem.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <None Include="Assets\FreeLabAssets\Shaders\SBS_Mana.shader" />
+    <None Include="Assets\Store Assets\FreeLabAssets\Shaders\SBS_Mana.shader" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2019.4.19f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

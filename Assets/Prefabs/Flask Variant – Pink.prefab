@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5619791201044076202
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8878838917104293664, guid: 1a8c99a7749ff492da5e836d6a842fa3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878838917104293664, guid: 1a8c99a7749ff492da5e836d6a842fa3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878838917104293664, guid: 1a8c99a7749ff492da5e836d6a842fa3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878838917104293664, guid: 1a8c99a7749ff492da5e836d6a842fa3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878838917104293664, guid: 1a8c99a7749ff492da5e836d6a842fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878838917104293664, guid: 1a8c99a7749ff492da5e836d6a842fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878838917104293664, guid: 1a8c99a7749ff492da5e836d6a842fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878838917104293664, guid: 1a8c99a7749ff492da5e836d6a842fa3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878838917104293664, guid: 1a8c99a7749ff492da5e836d6a842fa3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878838917104293664, guid: 1a8c99a7749ff492da5e836d6a842fa3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878838917104293664, guid: 1a8c99a7749ff492da5e836d6a842fa3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8880577979898923550, guid: 1a8c99a7749ff492da5e836d6a842fa3,
+        type: 3}
+      propertyPath: m_Name
+      value: "Flask Variant \u2013\_Pink"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8893184219477843808, guid: 1a8c99a7749ff492da5e836d6a842fa3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 540fd3361315d429db332b9fec3936f7, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1a8c99a7749ff492da5e836d6a842fa3, type: 3}
