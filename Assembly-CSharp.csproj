@@ -64,6 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scriptable Objects\ChemicalItem.cs" />
+    <Compile Include="Assets\Scriptable Objects\ChemicalSpawner.cs" />
+    <Compile Include="Assets\Scriptable Objects\CrafterObject.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <None Include="Assets\Store Assets\FreeLabAssets\Shaders\SBS_Mana.shader" />

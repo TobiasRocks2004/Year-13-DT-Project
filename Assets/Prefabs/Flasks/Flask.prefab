@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1334880527026988192}
   - component: {fileID: 1368820883830944686}
   - component: {fileID: 1358419538695371910}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Liquid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 1358897535451757198}
   - component: {fileID: -3715253782889594781}
   - component: {fileID: -3169898468289961911}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Flask
   m_TagString: Untagged
   m_Icon: {fileID: 0}

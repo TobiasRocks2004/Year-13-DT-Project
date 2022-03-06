@@ -9,7 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79269156ea6d94ff6886aa63e5f72b89, type: 3}
-  m_Name: Orange Fluid
+  m_Script: {fileID: 11500000, guid: 891b738b485404d16a5256ac2ab2e5b0, type: 3}
+  m_Name: Centrifuge
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
+  slotCount: 0
+  slotPositions:
+  - {fileID: 0}
+  - {fileID: 0}
+  runtime: 20
