@@ -21,7 +21,7 @@ public class ChemicalSpawner : ScriptableObject
         if (!(CheckForChemical() || chemical == null) && cooldown <= 0)
         {
             Instantiate(chemical, spawnPos, Quaternion.identity);
-            cooldown = 300;
+            cooldown = 1000;
         }
         else
         {
