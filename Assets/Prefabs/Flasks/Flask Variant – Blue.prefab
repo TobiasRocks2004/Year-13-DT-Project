@@ -72,5 +72,15 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e009bb621c57c4b089f90023853f5dcb, type: 2}
+    - target: {fileID: 7442448650168387574, guid: d962008507c8843b28df6b0d1408af13,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e009bb621c57c4b089f90023853f5dcb, type: 2}
+    - target: {fileID: 8940950563403723525, guid: d962008507c8843b28df6b0d1408af13,
+        type: 3}
+      propertyPath: puddleMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: e009bb621c57c4b089f90023853f5dcb, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d962008507c8843b28df6b0d1408af13, type: 3}

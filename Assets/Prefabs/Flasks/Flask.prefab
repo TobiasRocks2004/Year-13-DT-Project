@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 900a5d3244f1244cfba2938f54c08375, type: 2}
+  - {fileID: 2100000, guid: 1898c9825c94447b8af46a55ada8d1fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -90,8 +90,9 @@ GameObject:
   - component: {fileID: 1335040494041789638}
   - component: {fileID: 1368266389791339364}
   - component: {fileID: 1358897535451757198}
-  - component: {fileID: -3715253782889594781}
   - component: {fileID: -3169898468289961911}
+  - component: {fileID: 1014923860765654448}
+  - component: {fileID: 5995140492290756784}
   m_Layer: 9
   m_Name: Flask
   m_TagString: Untagged
@@ -161,19 +162,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &-3715253782889594781
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1337246027995752952}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.15976468, y: 0.23929505, z: 0.15859985}
-  m_Center: {x: -0.000000055879354, y: 0.119647525, z: -0.0000006109476}
 --- !u!54 &-3169898468289961911
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -190,3 +178,35 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &1014923860765654448
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337246027995752952}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: d8fafffe727d6c241a606d309b77af7d, type: 3}
+--- !u!114 &5995140492290756784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337246027995752952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2634178161a84070b6f97c67b9a047a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlePrefab: {fileID: 2401819600282200021, guid: 6000d4ea0fae4407a891dada9ff6a06b,
+    type: 3}
+  puddleMaterial: {fileID: 2100000, guid: 1898c9825c94447b8af46a55ada8d1fb, type: 2}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1335

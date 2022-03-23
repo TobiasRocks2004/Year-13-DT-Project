@@ -65,7 +65,22 @@ PrefabInstance:
     - target: {fileID: 1337246027995752952, guid: cc909645d120842978fafbac2e44dd7c,
         type: 3}
       propertyPath: m_Name
-      value: Flask
+      value: "Flask Variant \u2013\_Black"
       objectReference: {fileID: 0}
+    - target: {fileID: 1358419538695371910, guid: cc909645d120842978fafbac2e44dd7c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 900a5d3244f1244cfba2938f54c08375, type: 2}
+    - target: {fileID: 5219465485553476675, guid: cc909645d120842978fafbac2e44dd7c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 900a5d3244f1244cfba2938f54c08375, type: 2}
+    - target: {fileID: 5995140492290756784, guid: cc909645d120842978fafbac2e44dd7c,
+        type: 3}
+      propertyPath: puddleMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 900a5d3244f1244cfba2938f54c08375, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc909645d120842978fafbac2e44dd7c, type: 3}

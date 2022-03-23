@@ -7,6 +7,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2937316171507157822, guid: 13a58094ece0d428aa1fb3dc43b10231,
+        type: 3}
+      propertyPath: puddleMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: fecefa9784aa641c191d99ad31b3e5e8, type: 2}
+    - target: {fileID: 3719746559977422797, guid: 13a58094ece0d428aa1fb3dc43b10231,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fecefa9784aa641c191d99ad31b3e5e8, type: 2}
     - target: {fileID: 7577982172294801160, guid: 13a58094ece0d428aa1fb3dc43b10231,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bacf3f3d08ef04db589f98db486d7b09, type: 3}
   m_Name: DropperMiddle
   m_EditorClassIdentifier: 
-  chemical: {fileID: 7655981103916216736, guid: 0edaa4b429fd64a14a45c9045419b95a,
+  chemical: {fileID: 7789820445585630015, guid: 12e3003d6485f4b908bf49934c3666e2,
     type: 3}
   watcherPos: {x: 1.3125, y: -0.625, z: -8.2}
   spawnPos: {x: 1.3125, y: 0, z: -8.2}
+  cooldown: 600

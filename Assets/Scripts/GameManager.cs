@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+// your classic game manager
 public class GameManager : MonoBehaviour
 {
     List<ChemicalSpawner> spawners = new List<ChemicalSpawner>();
 
-    // Start is called before the first frame update
     void Start()
     {
         string[] guids;
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    // tries to spawn a chemical every frame
     void Update()
     {
         foreach (ChemicalSpawner spawner in spawners)

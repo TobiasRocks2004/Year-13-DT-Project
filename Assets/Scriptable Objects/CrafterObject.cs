@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Crafter scriptable object
 [CreateAssetMenu(fileName = "New Crafting Station", menuName = "Scriptables/Crafting Station")]
 public class CrafterObject : ScriptableObject
 {

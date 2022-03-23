@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// simple script to control looking around
+// camera control code courtesy of Brackeys
 public class MouseLook : MonoBehaviour
 {
     public float sensitivity = 100f;

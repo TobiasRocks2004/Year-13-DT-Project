@@ -66,9 +66,11 @@
     <Compile Include="Assets\Scriptable Objects\ChemicalItem.cs" />
     <Compile Include="Assets\Scriptable Objects\ChemicalSpawner.cs" />
     <Compile Include="Assets\Scriptable Objects\CrafterObject.cs" />
+    <Compile Include="Assets\Scripts\BreakGlass.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\VertHandler.cs" />
     <None Include="Assets\Store Assets\FreeLabAssets\Shaders\SBS_Mana.shader" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2019.4.19f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>

@@ -72,5 +72,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7791854989428625679, guid: 46493bbd609f5454783e960c8ca36b7f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f76089bdb16e54b9ba7a33b36615f925, type: 2}
+    - target: {fileID: 8610454104950515196, guid: 46493bbd609f5454783e960c8ca36b7f,
+        type: 3}
+      propertyPath: puddleMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: f76089bdb16e54b9ba7a33b36615f925, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46493bbd609f5454783e960c8ca36b7f, type: 3}

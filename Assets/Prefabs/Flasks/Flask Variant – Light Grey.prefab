@@ -72,5 +72,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Flask Variant \u2013\_Light Grey"
       objectReference: {fileID: 0}
+    - target: {fileID: 5262875933288765928, guid: 55440edbfa64548cf975f837cf410f85,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3222901a20e6548f89973ed7a7e2546d, type: 2}
+    - target: {fileID: 5932715635896200475, guid: 55440edbfa64548cf975f837cf410f85,
+        type: 3}
+      propertyPath: puddleMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 3222901a20e6548f89973ed7a7e2546d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55440edbfa64548cf975f837cf410f85, type: 3}
