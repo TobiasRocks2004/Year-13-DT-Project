@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Centrifuge
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
-  slotCount: 0
+  slotCount: 2
   slotPositions:
   - {fileID: 0}
   - {fileID: 0}

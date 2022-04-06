@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sink
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
-  slotCount: 0
+  slotCount: 1
   slotPositions:
   - {fileID: 0}
   runtime: 5

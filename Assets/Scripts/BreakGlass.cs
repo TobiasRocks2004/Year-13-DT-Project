@@ -31,8 +31,8 @@ public class BreakGlass : MonoBehaviour
             if (Physics.Raycast(transform.position + Vector3.up, Vector3.down, out hit, Mathf.Infinity, layerMask))
             {
                 hitPos = hit.point;
-                GameObject particles = Instantiate(particlePrefab, hit.point, Quaternion.identity);
-                particles.GetComponentsInChildren<ParticleSystemRenderer>()[1].material = puddleMaterial;
+                GameObject puddles = Instantiate(particlePrefab, hit.point, Quaternion.identity);
+                puddles.GetComponentsInChildren<ParticleSystemRenderer>()[1].material = puddleMaterial;
 
                 Destroy(gameObject);
             }

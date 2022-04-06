@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 
     // physics variables
     [Space(10)]
-    public float speed = 12f;
+    public float speed = 8f;
     public float gravity = -9.8f;
 
     // store the object currently in the hand
@@ -66,37 +66,61 @@ public class PlayerController : MonoBehaviour
         // detect a click
         if (Input.GetMouseButtonDown(0))
         {
-            // pick up object if an object isn't held yet, otherwise place the held object
-            if (heldObject == null)
+            GameObject hitObject = null;
+
+            Ray ray;
+            RaycastHit hit;
+
+            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hit))
             {
-                GetObjectAtMouse();
+                hitObject = hit.transform.gameObject;
             }
-            else
+
+            if (hitObject != null && Vector3.Distance(hit.point, transform.position) < interactMaxDist)
             {
-                PlaceObjectAtMouse();
-            }
-        }
-    }
+                Debug.Log(hitObject.layer);
+                Debug.Log(heldObject == null);
 
-    // function that picks up the object under the mouse
-    void GetObjectAtMouse()
-    {
-        Ray ray;
-        RaycastHit hit;
+                if (hitObject.layer == 9 && heldObject == null) // layer 9: Flasks
+                {
+                    Debug.Log("picking up flask");
 
-        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out hit))
-        {
-            if (hit.collider.gameObject.layer == 9 && Vector3.Distance(hit.collider.transform.position, transform.position) < interactMaxDist) //layer 9: Flasks
-            {
-                // make it appear in the player's "hand"
-                heldObject = hit.collider.gameObject;
-                heldObject.transform.parent = transform;
-
-                heldObject.GetComponent<Rigidbody>().isKinematic = true;
-                heldObject.GetComponent<Collider>().enabled = false;
-                heldObject.transform.localPosition = heldObjectPos;
-                heldObject.transform.localRotation = Quaternion.identity;
+                    // make it appear in the player's "hand"
+                    heldObject = hitObject;
+                    heldObject.transform.parent = transform;
+                    heldObject.GetComponent<Rigidbody>().isKinematic = true;
+                    heldObject.GetComponent<Collider>().enabled = false;
+                    heldObject.transform.localPosition = heldObjectPos;
+                    heldObject.transform.localRotation = Quaternion.identity;
+                }
+                else if (hitObject.layer == 11 && heldObject == null) // layer 11: Microwave Door
+                {
+                    if (hitObject.GetComponent<Transform>().rotation.y != 0)
+                    {
+                        hitObject.GetComponent<Animator>().SetTrigger("Close");
+                    }
+                    else
+                    {
+                        hitObject.GetComponent<Animator>().SetTrigger("Open");
+                    }
+                }
+                else if (hitObject.layer == 12) // layer 12: Slots
+                {
+                    Slot slot = hitObject.GetComponent<Slot>();
+                    if (!slot.occupied)
+                    {
+                        PlaceObjectInSlot(slot);
+                    }
+                    else
+                    {
+                        GetObjectInSlot(slot);
+                    }
+                }
+                else if (heldObject != null)
+                {
+                    PlaceObjectAtMouse();
+                }
             }
         }
     }
@@ -127,4 +151,38 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void PlaceObjectInSlot(Slot slot)
+    {
+        if (Vector3.Distance(slot.transform.position, transform.position) < interactMaxDist)
+        {
+            if (heldObject != null)
+            {
+                heldObject.transform.parent = slot.transform;
+
+                slot.occupied = true;
+                slot.occupation = heldObject;
+
+                Physics.IgnoreCollision(heldObject.GetComponent<Collider>(), slot.GetComponent<Collider>());
+                slot.occupation.transform.position = slot.transform.position;
+
+                heldObject = null;
+            }
+        }
+    }
+
+    void GetObjectInSlot(Slot slot)
+    {
+        if (Vector3.Distance(slot.transform.position, transform.position) < interactMaxDist)
+        {
+            slot.occupation.transform.parent = transform;
+
+            heldObject = slot.occupation;
+
+            slot.occupied = false;
+            slot.occupation = null;
+
+            heldObject.transform.localPosition = heldObjectPos;
+            heldObject.transform.localRotation = Quaternion.identity;
+        }
+    }
 }

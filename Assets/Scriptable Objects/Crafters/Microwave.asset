@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Microwave
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
-  slotCount: 0
+  slotCount: 1
   slotPositions:
-  - {fileID: 0}
+  - {fileID: 2874238785700290454, guid: db9f4eafd45c74b83bb4a11799cb5b02, type: 3}
   runtime: 10

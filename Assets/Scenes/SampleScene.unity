@@ -342,6 +342,80 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65628371}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &97938475
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 681848393480475303, guid: 3abdcd3c3b1884c88b9b28c37481fa28,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924836575547347042, guid: 3abdcd3c3b1884c88b9b28c37481fa28,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924836575547347042, guid: 3abdcd3c3b1884c88b9b28c37481fa28,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0064051673
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924836575547347042, guid: 3abdcd3c3b1884c88b9b28c37481fa28,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.896
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924836575547347042, guid: 3abdcd3c3b1884c88b9b28c37481fa28,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.817
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924836575547347042, guid: 3abdcd3c3b1884c88b9b28c37481fa28,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924836575547347042, guid: 3abdcd3c3b1884c88b9b28c37481fa28,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924836575547347042, guid: 3abdcd3c3b1884c88b9b28c37481fa28,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924836575547347042, guid: 3abdcd3c3b1884c88b9b28c37481fa28,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924836575547347042, guid: 3abdcd3c3b1884c88b9b28c37481fa28,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924836575547347042, guid: 3abdcd3c3b1884c88b9b28c37481fa28,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924836575547347042, guid: 3abdcd3c3b1884c88b9b28c37481fa28,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697995163107429080, guid: 3abdcd3c3b1884c88b9b28c37481fa28,
+        type: 3}
+      propertyPath: m_Name
+      value: Microwave
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3abdcd3c3b1884c88b9b28c37481fa28, type: 3}
 --- !u!1 &165154143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,7 +1334,7 @@ Transform:
   - {fileID: 1307882069}
   - {fileID: 1427741491}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -1779,7 +1853,7 @@ Transform:
   - {fileID: 65628372}
   - {fileID: 298627520}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1022882998 stripped
 Transform:
@@ -2152,7 +2226,7 @@ RectTransform:
   m_Children:
   - {fileID: 2084957346}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2561,7 +2635,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1602386145}
-  m_Layer: 17
+  m_Layer: 8
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2633,8 +2707,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.6487784, y: 1.2715473, z: 0.89952946}
-  m_Center: {x: -1.5323565, y: 0.00057029724, z: -0.016798496}
+  m_Size: {x: 4.6487784, y: 1.2795253, z: 0.89952946}
+  m_Center: {x: -1.5323565, y: 0.0045592785, z: -0.016798496}
 --- !u!1 &1620155707
 GameObject:
   m_ObjectHideFlags: 0
@@ -2899,8 +2973,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.1280413, y: 0.31961, z: 0.61187476}
-  m_Center: {x: -0.0018196724, y: 0.159805, z: -0.0059372904}
+  m_Size: {x: 0.12842076, y: 0.3209532, z: 0.626701}
+  m_Center: {x: -0.0023211497, y: 0.16120794, z: 0.001245308}
 --- !u!1001 &1746356544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3020,7 +3094,7 @@ Transform:
   - {fileID: 186992334}
   - {fileID: 1675922741}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1829728468
 GameObject:
@@ -3086,7 +3160,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1850294989 stripped
 Transform:
@@ -3425,7 +3499,7 @@ Transform:
   - {fileID: 963194228}
   - {fileID: 1620155708}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 8.0390005, z: 0}
 --- !u!143 &1951779498
 CharacterController:
@@ -3466,7 +3540,7 @@ MonoBehaviour:
   speed: 8
   gravity: -9.8
   heldObjectPos: {x: 0.2, y: 0.4, z: 0.35}
-  interactMaxDist: 100
+  interactMaxDist: 3
 --- !u!1 &1983780774
 GameObject:
   m_ObjectHideFlags: 0
@@ -3631,7 +3705,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 1.6063919, z: 4.58e-41, w: 9.403955e-38}
+  m_BoundingSphereOverride: {x: 0.59000033, y: 0.9391379, z: 1, w: 3.2430725e-12}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 1
   m_ShadowAngle: 0
@@ -3772,8 +3846,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.15643042, y: 0.24628997, z: 0.5416314}
-  m_Center: {x: 0.000078822886, y: 0.10431826, z: -0.00014601946}
+  m_Size: {x: 0.15643042, y: 0.24782246, z: 0.5416314}
+  m_Center: {x: 0.000078822886, y: 0.10508451, z: -0.00014600754}
 --- !u!4 &2053981882 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 398008aaa9b8a2e4ebd3860a13db4038,
@@ -3986,7 +4060,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 1.5588284, z: 4.58e-41, w: 9.403955e-38}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 4.2e-44}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 1
   m_ShadowAngle: 0

@@ -7,6 +7,9 @@ using UnityEditor;
 public class GameManager : MonoBehaviour
 {
     List<ChemicalSpawner> spawners = new List<ChemicalSpawner>();
+    // TODO write code to get the recipes and crafting done
+    Dictionary<Colour, GameObject> correspondance = new Dictionary<Colour, GameObject>();
+    Dictionary<Colour, Colour> recipes = new Dictionary<Colour, Colour>();
 
     void Start()
     {
@@ -28,4 +31,24 @@ public class GameManager : MonoBehaviour
             spawner.SpawnChemical();
         }
     }
+}
+
+enum Colour
+{
+    White,
+    Light_Grey,
+    Grey,
+    Black,
+    Red,
+    Orange,
+    Yellow,
+    Green,
+    Dark_Green,
+    Cyan,
+    Light_Blue,
+    Blue,
+    Purple,
+    Magenta,
+    Pink,
+    Brown
 }

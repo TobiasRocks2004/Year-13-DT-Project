@@ -67,9 +67,11 @@
     <Compile Include="Assets\Scriptable Objects\ChemicalSpawner.cs" />
     <Compile Include="Assets\Scriptable Objects\CrafterObject.cs" />
     <Compile Include="Assets\Scripts\BreakGlass.cs" />
+    <Compile Include="Assets\Scripts\DestroyWhenDone.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Slot.cs" />
     <Compile Include="Assets\Scripts\VertHandler.cs" />
     <None Include="Assets\Store Assets\FreeLabAssets\Shaders\SBS_Mana.shader" />
     <Reference Include="UnityEngine">
