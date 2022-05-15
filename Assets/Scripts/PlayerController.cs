@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -79,13 +80,8 @@ public class PlayerController : MonoBehaviour
 
             if (hitObject != null && Vector3.Distance(hit.point, transform.position) < interactMaxDist)
             {
-                Debug.Log(hitObject.layer);
-                Debug.Log(heldObject == null);
-
                 if (hitObject.layer == 9 && heldObject == null) // layer 9: Flasks
                 {
-                    Debug.Log("picking up flask");
-
                     // make it appear in the player's "hand"
                     heldObject = hitObject;
                     heldObject.transform.parent = transform;
@@ -99,6 +95,7 @@ public class PlayerController : MonoBehaviour
                     if (hitObject.GetComponent<Transform>().rotation.y != 0)
                     {
                         hitObject.GetComponent<Animator>().SetTrigger("Close");
+                        CrafterObject microwave = hitObject.GetComponentInParent<CrafterObject>();
                     }
                     else
                     {

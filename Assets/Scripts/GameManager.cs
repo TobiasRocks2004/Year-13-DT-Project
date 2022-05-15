@@ -6,10 +6,12 @@ using UnityEditor;
 // your classic game manager
 public class GameManager : MonoBehaviour
 {
-    List<ChemicalSpawner> spawners = new List<ChemicalSpawner>();
+    [HideInInspector]
+    public List<ChemicalSpawner> spawners = new List<ChemicalSpawner>();
+    [HideInInspector]
+    public List<CrafterObject> crafters = new List<CrafterObject>();
     // TODO write code to get the recipes and crafting done
-    Dictionary<Colour, GameObject> correspondance = new Dictionary<Colour, GameObject>();
-    Dictionary<Colour, Colour> recipes = new Dictionary<Colour, Colour>();
+    public Dictionary<Colour, GameObject> correspondance = new Dictionary<Colour, GameObject>();
 
     void Start()
     {
@@ -20,6 +22,12 @@ public class GameManager : MonoBehaviour
         foreach (string guid in guids)
         {
             spawners.Add(AssetDatabase.LoadAssetAtPath<ChemicalSpawner>(AssetDatabase.GUIDToAssetPath(guid)));
+        }
+
+        guids = AssetDatabase.FindAssets("t:CrafterObject");
+        foreach (string guid in guids)
+        {
+            crafters.Add(AssetDatabase.LoadAssetAtPath<CrafterObject>(AssetDatabase.GUIDToAssetPath(guid)));
         }
     }
 
@@ -33,7 +41,7 @@ public class GameManager : MonoBehaviour
     }
 }
 
-enum Colour
+public enum Colour
 {
     White,
     Light_Grey,
