@@ -67,8 +67,8 @@
     <Compile Include="Assets\Real-Time Procedural Cable Simple\Scripts\CableProceduralMultipoint.cs" />
     <Compile Include="Assets\Real-Time Procedural Cable Simple\Scripts\CableProceduralSimple.cs" />
     <Compile Include="Assets\Real-Time Procedural Cable Simple\Scripts\CableProceduralStatic.cs" />
-    <Compile Include="Assets\Scriptable Objects\ChemicalItem.cs" />
     <Compile Include="Assets\Scripts\BreakGlass.cs" />
+    <Compile Include="Assets\Scripts\ChemicalItem.cs" />
     <Compile Include="Assets\Scripts\ChemicalSpawner.cs" />
     <Compile Include="Assets\Scripts\CrafterObject.cs" />
     <Compile Include="Assets\Scripts\DestroyWhenDone.cs" />

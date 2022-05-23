@@ -1,5 +1,64 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1054909359975265351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3940004852613737692}
+  - component: {fileID: 7712262438899071092}
+  - component: {fileID: 2182756804227806146}
+  m_Layer: 12
+  m_Name: Microwave Slot 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3940004852613737692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054909359975265351}
+  m_LocalRotation: {x: -0, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.10931166, y: -0.07815384, z: -0.09315386}
+  m_LocalScale: {x: 0.7692308, y: 0.7692308, z: 0.7692308}
+  m_Children: []
+  m_Father: {fileID: 4924836575547347042}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &7712262438899071092
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054909359975265351}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.17941721, y: 0.22550082, z: 0.2604004}
+  m_Center: {x: 0.0019451752, y: 0.10228413, z: 0.065945685}
+--- !u!114 &2182756804227806146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054909359975265351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b73a1a4d120a4c37bae23e26a5b5d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  occupied: 0
+  occupation: {fileID: 0}
 --- !u!1 &5697995163107429080
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,108 +284,3 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!1001 &2972536880750373841
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 4924836575547347042}
-    m_Modifications:
-    - target: {fileID: 2300537878218065677, guid: db9f4eafd45c74b83bb4a11799cb5b02,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300537878218065677, guid: db9f4eafd45c74b83bb4a11799cb5b02,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7692308
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300537878218065677, guid: db9f4eafd45c74b83bb4a11799cb5b02,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7692308
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300537878218065677, guid: db9f4eafd45c74b83bb4a11799cb5b02,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7692308
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300537878218065677, guid: db9f4eafd45c74b83bb4a11799cb5b02,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.10931166
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300537878218065677, guid: db9f4eafd45c74b83bb4a11799cb5b02,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.07815384
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300537878218065677, guid: db9f4eafd45c74b83bb4a11799cb5b02,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.09315386
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300537878218065677, guid: db9f4eafd45c74b83bb4a11799cb5b02,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300537878218065677, guid: db9f4eafd45c74b83bb4a11799cb5b02,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300537878218065677, guid: db9f4eafd45c74b83bb4a11799cb5b02,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300537878218065677, guid: db9f4eafd45c74b83bb4a11799cb5b02,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300537878218065677, guid: db9f4eafd45c74b83bb4a11799cb5b02,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300537878218065677, guid: db9f4eafd45c74b83bb4a11799cb5b02,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300537878218065677, guid: db9f4eafd45c74b83bb4a11799cb5b02,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2874238785700290454, guid: db9f4eafd45c74b83bb4a11799cb5b02,
-        type: 3}
-      propertyPath: m_Name
-      value: Microwave Slot 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2874238785700290454, guid: db9f4eafd45c74b83bb4a11799cb5b02,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4776040297542259621, guid: db9f4eafd45c74b83bb4a11799cb5b02,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 0.2604004
-      objectReference: {fileID: 0}
-    - target: {fileID: 4776040297542259621, guid: db9f4eafd45c74b83bb4a11799cb5b02,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 0.065945685
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: db9f4eafd45c74b83bb4a11799cb5b02, type: 3}
---- !u!4 &3940004852613737692 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2300537878218065677, guid: db9f4eafd45c74b83bb4a11799cb5b02,
-    type: 3}
-  m_PrefabInstance: {fileID: 2972536880750373841}
-  m_PrefabAsset: {fileID: 0}

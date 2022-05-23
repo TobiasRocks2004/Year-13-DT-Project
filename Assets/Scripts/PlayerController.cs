@@ -95,11 +95,12 @@ public class PlayerController : MonoBehaviour
                     if (hitObject.GetComponent<Transform>().rotation.y != 0)
                     {
                         hitObject.GetComponent<Animator>().SetTrigger("Close");
-                        CrafterObject microwave = hitObject.GetComponentInParent<CrafterObject>();
+                        hitObject.GetComponentInParent<CrafterObject>().StartIfValidRecipe();
                     }
                     else
                     {
                         hitObject.GetComponent<Animator>().SetTrigger("Open");
+                        hitObject.GetComponentInParent<CrafterObject>().StopTimer();
                     }
                 }
                 else if (hitObject.layer == 12) // layer 12: Slots
@@ -155,13 +156,9 @@ public class PlayerController : MonoBehaviour
             if (heldObject != null)
             {
                 heldObject.transform.parent = slot.transform;
-
-                slot.occupied = true;
-                slot.occupation = heldObject;
-
-                Physics.IgnoreCollision(heldObject.GetComponent<Collider>(), slot.GetComponent<Collider>());
-                slot.occupation.transform.position = slot.transform.position;
-
+                heldObject.transform.position = slot.transform.position;
+                heldObject.transform.localRotation = Quaternion.identity;
+                slot.SetSlot(heldObject);
                 heldObject = null;
             }
         }
@@ -171,15 +168,12 @@ public class PlayerController : MonoBehaviour
     {
         if (Vector3.Distance(slot.transform.position, transform.position) < interactMaxDist)
         {
-            slot.occupation.transform.parent = transform;
-
             heldObject = slot.occupation;
-
-            slot.occupied = false;
-            slot.occupation = null;
-
+            heldObject.transform.parent = transform;
             heldObject.transform.localPosition = heldObjectPos;
             heldObject.transform.localRotation = Quaternion.identity;
+
+            slot.ClearSlot();
         }
     }
 }

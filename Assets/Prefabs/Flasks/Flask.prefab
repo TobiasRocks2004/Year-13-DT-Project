@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: -3169898468289961911}
   - component: {fileID: 1014923860765654448}
   - component: {fileID: 5995140492290756784}
+  - component: {fileID: -6814073934761843728}
   m_Layer: 9
   m_Name: Flask
   m_TagString: Untagged
@@ -210,3 +211,16 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 1335
+--- !u!114 &-6814073934761843728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337246027995752952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d26585174aa74b63a4c8b027a598c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: -1

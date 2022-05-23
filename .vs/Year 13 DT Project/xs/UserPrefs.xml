@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{C921D750-7979-D708-01F1-BC4B7B25E9B3}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CrafterObject.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="98" Column="99" />
-      <File FileName="Assets/Scripts/CrafterObject.cs" Line="39" Column="6" />
-      <File FileName="Assets/Scripts/ChemicalSpawner.cs" />
-      <File FileName="Assets/Scripts/GameManager.cs" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="25" Column="2" />
+      <File FileName="Assets/Scripts/CrafterObject.cs" Line="97" Column="14" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="103" Column="85" />
+      <File FileName="Assets/Scripts/ChemicalItem.cs" Line="7" Column="19" />
+      <File FileName="Assets/Scripts/Slot.cs" Line="26" Column="27" />
+      <File FileName="Assets/Scripts/ChemicalSpawner.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +16,6 @@
               <Node name="Real-Time Procedural Cable Simple" expanded="True">
                 <Node name="Scripts" expanded="True" />
               </Node>
-              <Node name="Scriptable Objects" expanded="True" />
               <Node name="Scripts" expanded="True">
                 <Node name="CrafterObject.cs" selected="True" />
               </Node>
@@ -26,7 +27,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5df8b097-6bc3-4f89-9c19-9895e786e139" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="85c5828f-9d96-4695-a93c-8095fbf5c87d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
