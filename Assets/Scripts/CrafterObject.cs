@@ -78,11 +78,14 @@ public class CrafterObject : MonoBehaviour
             if (slot.occupied)
             {
                 reactantsCheck.Add(slot.occupation.GetComponent<ChemicalItem>().id);
+                Debug.Log("chemical " + slot.occupation.GetComponent<ChemicalItem>().id + " in slot");
             }
         }
 
         foreach (ListWrapper checkRecipe in reactants)
         {
+            Debug.Log("checking " + string.Join(", ", checkRecipe.list) + ":");
+
             int correctFound = 0;
             foreach (GameObject reactant in checkRecipe.list)
             {
@@ -95,10 +98,11 @@ public class CrafterObject : MonoBehaviour
 
             if (correctFound == checkRecipe.list.Count)
             {
+                Debug.Log("valid recipe found");
                 currentRecipe = recipes[checkRecipe.list];
                 running = true;
                 break;
-            }
+            } else Debug.Log("valid recipe not found");
         }
     }
     

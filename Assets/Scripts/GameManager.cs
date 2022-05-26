@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        Physics.IgnoreLayerCollision(9, 12);
+        Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Flasks"), LayerMask.NameToLayer("Slot"));
     }
 
     // tries to spawn a chemical every frame

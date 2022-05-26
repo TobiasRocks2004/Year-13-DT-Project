@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
 
             if (hitObject != null && Vector3.Distance(hit.point, transform.position) < interactMaxDist)
             {
-                if (hitObject.layer == 9 && heldObject == null) // layer 9: Flasks
+                if (hitObject.layer == LayerMask.NameToLayer("Flasks") && heldObject == null)
                 {
                     // make it appear in the player's "hand"
                     heldObject = hitObject;
@@ -90,7 +90,7 @@ public class PlayerController : MonoBehaviour
                     heldObject.transform.localPosition = heldObjectPos;
                     heldObject.transform.localRotation = Quaternion.identity;
                 }
-                else if (hitObject.layer == 11 && heldObject == null) // layer 11: Microwave Door
+                else if (hitObject.layer == LayerMask.NameToLayer("Microwave Door") && heldObject == null)
                 {
                     if (hitObject.GetComponent<Transform>().rotation.y != 0)
                     {
@@ -103,7 +103,7 @@ public class PlayerController : MonoBehaviour
                         hitObject.GetComponentInParent<CrafterObject>().StopTimer();
                     }
                 }
-                else if (hitObject.layer == 12) // layer 12: Slots
+                else if (hitObject.layer == LayerMask.NameToLayer("Slot"))
                 {
                     Slot slot = hitObject.GetComponent<Slot>();
                     if (!slot.occupied)
