@@ -5,9 +5,12 @@ using UnityEngine;
 public class Slot : MonoBehaviour
 {
     [HideInInspector]
-    public bool occupied;
+    public bool occupied = false;
     [HideInInspector]
     public GameObject occupation;
+
+    public bool isEntry = true;
+    public bool isExit = true;
 
     public void ClearSlot()
     {

@@ -90,6 +90,9 @@ public class PlayerController : MonoBehaviour
                     heldObject.transform.localPosition = heldObjectPos;
                     heldObject.transform.localRotation = Quaternion.identity;
                 }
+
+
+
                 else if (hitObject.layer == LayerMask.NameToLayer("Microwave Door") && heldObject == null)
                 {
                     if (hitObject.GetComponent<Transform>().rotation.y != 0)
@@ -103,18 +106,24 @@ public class PlayerController : MonoBehaviour
                         hitObject.GetComponentInParent<CrafterObject>().StopTimer();
                     }
                 }
+
+
+
                 else if (hitObject.layer == LayerMask.NameToLayer("Slot"))
                 {
                     Slot slot = hitObject.GetComponent<Slot>();
-                    if (!slot.occupied)
+                    if (!slot.occupied && slot.isEntry && heldObject != null)
                     {
                         PlaceObjectInSlot(slot);
                     }
-                    else
+                    else if (slot.occupied && slot.isExit && heldObject == null)
                     {
                         GetObjectInSlot(slot);
                     }
                 }
+
+
+
                 else if (heldObject != null)
                 {
                     PlaceObjectAtMouse();

@@ -63,10 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Real-Time Procedural Cable Simple\Scripts\CableProceduralCurve.cs" />
-    <Compile Include="Assets\Real-Time Procedural Cable Simple\Scripts\CableProceduralMultipoint.cs" />
-    <Compile Include="Assets\Real-Time Procedural Cable Simple\Scripts\CableProceduralSimple.cs" />
-    <Compile Include="Assets\Real-Time Procedural Cable Simple\Scripts\CableProceduralStatic.cs" />
     <Compile Include="Assets\Scripts\BreakGlass.cs" />
     <Compile Include="Assets\Scripts\ChemicalItem.cs" />
     <Compile Include="Assets\Scripts\ChemicalSpawner.cs" />
@@ -74,9 +70,9 @@
     <Compile Include="Assets\Scripts\DestroyWhenDone.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\Scripts\PlayParticleWhileRunning.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Slot.cs" />
-    <Compile Include="Assets\Scripts\VertHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -115,7 +111,6 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
-    <None Include="Assets\Real-Time Procedural Cable Simple\ReadmeSimpleCable.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
@@ -127,12 +122,9 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\Real-Time Procedural Cable Simple\ReadmeStaticCable.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\Real-Time Procedural Cable Simple\ReadmeCurveCable.txt" />
-    <None Include="Assets\Real-Time Procedural Cable Simple\ReadmeMultiPointCable.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />

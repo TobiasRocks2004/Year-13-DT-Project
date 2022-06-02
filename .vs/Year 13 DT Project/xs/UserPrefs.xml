@@ -1,23 +1,21 @@
 ﻿<Properties StartupConfiguration="{C921D750-7979-D708-01F1-BC4B7B25E9B3}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ChemicalSpawner.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
     <Files>
       <File FileName="Assets/Scripts/GameManager.cs" Line="13" Column="6" />
-      <File FileName="Assets/Scripts/CrafterObject.cs" Line="101" Column="49" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="106" Column="75" />
-      <File FileName="Assets/Scripts/ChemicalItem.cs" Line="7" Column="19" />
-      <File FileName="Assets/Scripts/Slot.cs" Line="26" Column="27" />
-      <File FileName="Assets/Scripts/ChemicalSpawner.cs" Line="24" Column="83" />
+      <File FileName="Assets/Scripts/CrafterObject.cs" Line="71" Column="9" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="117" Column="49" />
+      <File FileName="Assets/Scripts/ChemicalItem.cs" />
+      <File FileName="Assets/Scripts/Slot.cs" Line="8" Column="33" />
+      <File FileName="Assets/Scripts/ChemicalSpawner.cs" />
+      <File FileName="Assets/Scripts/PlayFire.cs" Line="12" Column="39" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Year 13 DT Project" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Real-Time Procedural Cable Simple" expanded="True">
-                <Node name="Scripts" expanded="True" />
-              </Node>
               <Node name="Scripts" expanded="True">
-                <Node name="ChemicalSpawner.cs" selected="True" />
+                <Node name="PlayerController.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -27,7 +25,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="04b086cf-b6fc-4dbe-8e5d-eae5024cf9cf" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="44a554f2-fcdf-4611-821b-40b37b5bf86a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

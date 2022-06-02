@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 // Crafter scriptable object
 public class CrafterObject : MonoBehaviour
@@ -9,16 +10,21 @@ public class CrafterObject : MonoBehaviour
 
     public List<GameObject> slotPositions;
 
-    public int runtime;
+    public bool autoRun;
 
+    public int runtime;
+    [HideInInspector]
+    public bool running = false;
+    float timer = 0;
+
+    [Space(50)]
     public List<ListWrapper> reactants;
+    [Space(50)]
     public List<ListWrapper> products;
 
     public Dictionary<List<GameObject>, List<GameObject>> recipes;
 
     List<GameObject> currentRecipe;
-    bool running = false;
-    float timer = 0;
     
     public void OnValidate()
     {
@@ -40,6 +46,17 @@ public class CrafterObject : MonoBehaviour
     {
         if (running)
         {
+            int occupiedCount = 0;
+            foreach(GameObject slot in slotPositions)
+            {
+                if (slot.GetComponent<Slot>().occupied) occupiedCount++;
+            }
+
+            if (currentRecipe.Count != occupiedCount)
+            {
+                running = false;
+            }
+
             timer += Time.deltaTime;
 
             if (timer >= runtime)
@@ -49,6 +66,10 @@ public class CrafterObject : MonoBehaviour
 
                 ExecuteCraft();
             }
+        }
+        else if (autoRun)
+        {
+            StartIfValidRecipe();
         }
     }
 
@@ -78,14 +99,11 @@ public class CrafterObject : MonoBehaviour
             if (slot.occupied)
             {
                 reactantsCheck.Add(slot.occupation.GetComponent<ChemicalItem>().id);
-                Debug.Log("chemical " + slot.occupation.GetComponent<ChemicalItem>().id + " in slot");
             }
         }
 
         foreach (ListWrapper checkRecipe in reactants)
         {
-            Debug.Log("checking " + string.Join(", ", checkRecipe.list) + ":");
-
             int correctFound = 0;
             foreach (GameObject reactant in checkRecipe.list)
             {
@@ -98,11 +116,10 @@ public class CrafterObject : MonoBehaviour
 
             if (correctFound == checkRecipe.list.Count)
             {
-                Debug.Log("valid recipe found");
                 currentRecipe = recipes[checkRecipe.list];
                 running = true;
                 break;
-            } else Debug.Log("valid recipe not found");
+            }
         }
     }
     
