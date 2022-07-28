@@ -6,10 +6,12 @@ public class ChemicalSpawner : MonoBehaviour
 {
     public string spawnerName;
 
-    public GameObject chemical;
+    public GameObject prefab;
+    [SerializeField]
+    public ChemicalColour spawnColour;
     public Vector3 watcherPos;
     public Vector3 spawnPos;
-    public int cooldown = 600;
+    public int cooldown;
 
     private int timer = 0;
 
@@ -27,9 +29,11 @@ public class ChemicalSpawner : MonoBehaviour
     // spawns a chemical every [COOLDOWN] frames
     public void SpawnChemical()
     {
-        if (!(CheckForChemical() || chemical == null) && timer <= 0)
+        if (!(CheckForChemical() || prefab == null) && timer <= 0)
         {
-            Instantiate(chemical, spawnPos, Quaternion.identity);
+            GameObject chemical = Instantiate(prefab, spawnPos, Quaternion.identity);
+            chemical.GetComponent<ChemicalItem>().color = spawnColour;
+
             timer = cooldown;
         }
         else

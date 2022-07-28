@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour
                     if (hitObject.GetComponent<Transform>().rotation.y != 0)
                     {
                         hitObject.GetComponent<Animator>().SetTrigger("Close");
-                        hitObject.GetComponentInParent<CrafterObject>().StartIfValidRecipe();
+                        hitObject.GetComponentInParent<CrafterObject>().CheckIfValid();
                     }
                     else
                     {
@@ -166,8 +166,8 @@ public class PlayerController : MonoBehaviour
             {
                 heldObject.transform.parent = slot.transform;
                 heldObject.transform.position = slot.transform.position;
-                heldObject.transform.localRotation = Quaternion.identity;
-                slot.SetSlot(heldObject);
+                heldObject.transform.rotation = Quaternion.identity;
+                slot.AssignSlot(heldObject);
                 heldObject = null;
             }
         }
@@ -181,7 +181,6 @@ public class PlayerController : MonoBehaviour
             heldObject.transform.parent = transform;
             heldObject.transform.localPosition = heldObjectPos;
             heldObject.transform.localRotation = Quaternion.identity;
-
             slot.ClearSlot();
         }
     }

@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: cac703c1f0c514f20af88870ca7a12d6, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731191, g: 0.3807391, b: 0.3587268, a: 1}
+  m_IndirectSpecularColor: {r: 0.2944512, g: 0.30529088, b: 0.326505, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -168,8 +168,7 @@ MonoBehaviour:
   - {fileID: 686782612}
   - {fileID: 978101490}
   - {fileID: 1794028782}
-  crafters:
-  - {fileID: 97938478}
+  crafters: []
 --- !u!4 &47302642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400010, guid: 7d0701320ee303d439feed9498b8d336,
@@ -348,50 +347,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65628371}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &97938478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5697995163045979891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b73e7ee4ccd364a9dbb122d98c7dbc24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  crafterName: Microwave
-  slotPositions:
-  - {fileID: 1054909359887816812}
-  autoRun: 0
-  runtime: 5
-  running: 0
-  reactants:
-  - list:
-    - {fileID: 7655981103916216736, guid: 0edaa4b429fd64a14a45c9045419b95a, type: 3}
-  - list:
-    - {fileID: 7355625091129797057, guid: 2d3ccd9be728547a4b85f9aa4fe84073, type: 3}
-  - list:
-    - {fileID: 3416675754186960756, guid: 22d5d4b9ed48545929c662c4ceb4f6f8, type: 3}
-  - list:
-    - {fileID: 3623017594897741434, guid: f9a91d80f0d65431b9509fa7c13c7cda, type: 3}
-  - list:
-    - {fileID: 838465013704613396, guid: af22ca824aa3d4d838246b1a70e78bb2, type: 3}
-  - list:
-    - {fileID: 1349580125925088102, guid: 8e5dd6f251ec44800814194152ef4822, type: 3}
-  products:
-  - list:
-    - {fileID: 4443220515287583309, guid: d962008507c8843b28df6b0d1408af13, type: 3}
-  - list:
-    - {fileID: 3416675754186960756, guid: 22d5d4b9ed48545929c662c4ceb4f6f8, type: 3}
-  - list:
-    - {fileID: 1349580125925088102, guid: 8e5dd6f251ec44800814194152ef4822, type: 3}
-  - list:
-    - {fileID: 885996066693332370, guid: 62b8c8a3e651f49c8add66bac3438474, type: 3}
-  - list:
-    - {fileID: 8559410204648277762, guid: 46493bbd609f5454783e960c8ca36b7f, type: 3}
-  - list:
-    - {fileID: 6044504873573322725, guid: 55440edbfa64548cf975f837cf410f85, type: 3}
 --- !u!1 &165154143
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,7 +726,7 @@ Transform:
   - {fileID: 2998921001927301535}
   - {fileID: 1132985122}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &390142465
 MonoBehaviour:
@@ -785,46 +740,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b73e7ee4ccd364a9dbb122d98c7dbc24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crafterName: 
   slotPositions:
   - {fileID: 1265565593482936580}
   autoRun: 1
   runtime: 4
   running: 0
-  reactants:
-  - list:
-    - {fileID: 838465013704613396, guid: af22ca824aa3d4d838246b1a70e78bb2, type: 3}
-  - list:
-    - {fileID: 2987057698274208192, guid: 1a8c99a7749ff492da5e836d6a842fa3, type: 3}
-  - list:
-    - {fileID: 4266211122894541224, guid: 13a58094ece0d428aa1fb3dc43b10231, type: 3}
-  - list:
-    - {fileID: 7789820445585630015, guid: 12e3003d6485f4b908bf49934c3666e2, type: 3}
-  - list:
-    - {fileID: 885996066693332370, guid: 62b8c8a3e651f49c8add66bac3438474, type: 3}
-  - list:
-    - {fileID: 4068313941857899134, guid: 1ed1caee4e067401e96db4aaf88b76e6, type: 3}
-  - list:
-    - {fileID: 1337246027995752952, guid: cc909645d120842978fafbac2e44dd7c, type: 3}
-  - list:
-    - {fileID: 7355625091129797057, guid: 2d3ccd9be728547a4b85f9aa4fe84073, type: 3}
-  products:
-  - list:
-    - {fileID: 2987057698274208192, guid: 1a8c99a7749ff492da5e836d6a842fa3, type: 3}
-  - list:
-    - {fileID: 4266211122894541224, guid: 13a58094ece0d428aa1fb3dc43b10231, type: 3}
-  - list:
-    - {fileID: 7655981103916216736, guid: 0edaa4b429fd64a14a45c9045419b95a, type: 3}
-  - list:
-    - {fileID: 885996066693332370, guid: 62b8c8a3e651f49c8add66bac3438474, type: 3}
-  - list:
-    - {fileID: 4068313941857899134, guid: 1ed1caee4e067401e96db4aaf88b76e6, type: 3}
-  - list:
-    - {fileID: 7655981103916216736, guid: 0edaa4b429fd64a14a45c9045419b95a, type: 3}
-  - list:
-    - {fileID: 7655981103916216736, guid: 0edaa4b429fd64a14a45c9045419b95a, type: 3}
-  - list:
-    - {fileID: 7655981103916216736, guid: 0edaa4b429fd64a14a45c9045419b95a, type: 3}
+  template: {fileID: 7355625091129797057, guid: 2d3ccd9be728547a4b85f9aa4fe84073,
+    type: 3}
+  colours: []
 --- !u!1001 &395865845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1285,7 +1208,7 @@ GameObject:
   - component: {fileID: 558844316}
   - component: {fileID: 558844315}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1359,12 +1282,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 558844314}
-  m_LocalRotation: {x: -0.27059805, y: -0.27059805, z: 0.6532815, w: 0.6532815}
-  m_LocalPosition: {x: -3.101, y: -0.65288, z: -2.166}
-  m_LocalScale: {x: 0.03, y: 0.25, z: 0.03}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: -0.013061911, y: 0.643819, z: 2.758795}
+  m_LocalScale: {x: 0.3, y: 2.4999995, z: 0.29999995}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 7349312322131269565}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -45, z: 90}
 --- !u!1 &651716637
 GameObject:
@@ -1490,7 +1413,7 @@ Transform:
   - {fileID: 1307882069}
   - {fileID: 1427741491}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &686782612
 MonoBehaviour:
@@ -1505,8 +1428,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnerName: Yellow Dropper
-  chemical: {fileID: 7789820445585630015, guid: 12e3003d6485f4b908bf49934c3666e2,
-    type: 3}
+  prefab: {fileID: 7355625091129797057, guid: 2d3ccd9be728547a4b85f9aa4fe84073, type: 3}
+  spawnColour:
+    r: 3
+    g: 3
+    b: 0
   watcherPos: {x: 3.125, y: -0.65, z: -8.2}
   spawnPos: {x: 3.125, y: 0, z: -8.2}
   cooldown: 600
@@ -1878,50 +1804,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b73e7ee4ccd364a9dbb122d98c7dbc24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crafterName: Bunsen Burner
   slotPositions:
   - {fileID: 2647614444909042516}
   autoRun: 1
   runtime: 20
   running: 0
-  reactants:
-  - list:
-    - {fileID: 7789820445585630015, guid: 12e3003d6485f4b908bf49934c3666e2, type: 3}
-  - list:
-    - {fileID: 4810094507196567367, guid: da710e6d4214b4ba8b8adbc5d57860b5, type: 3}
-  - list:
-    - {fileID: 6044504873573322725, guid: 55440edbfa64548cf975f837cf410f85, type: 3}
-  - list:
-    - {fileID: 8559410204648277762, guid: 46493bbd609f5454783e960c8ca36b7f, type: 3}
-  - list:
-    - {fileID: 7655981103916216736, guid: 0edaa4b429fd64a14a45c9045419b95a, type: 3}
-  - list:
-    - {fileID: 4266211122894541224, guid: 13a58094ece0d428aa1fb3dc43b10231, type: 3}
-  - list:
-    - {fileID: 2987057698274208192, guid: 1a8c99a7749ff492da5e836d6a842fa3, type: 3}
-  - list:
-    - {fileID: 7355625091129797057, guid: 2d3ccd9be728547a4b85f9aa4fe84073, type: 3}
-  - list:
-    - {fileID: 2963599001124346813, guid: 138de755c8f20428ca24bf5ec6449332, type: 3}
-  products:
-  - list:
-    - {fileID: 4810094507196567367, guid: da710e6d4214b4ba8b8adbc5d57860b5, type: 3}
-  - list:
-    - {fileID: 838465013704613396, guid: af22ca824aa3d4d838246b1a70e78bb2, type: 3}
-  - list:
-    - {fileID: 8559410204648277762, guid: 46493bbd609f5454783e960c8ca36b7f, type: 3}
-  - list:
-    - {fileID: 838465013704613396, guid: af22ca824aa3d4d838246b1a70e78bb2, type: 3}
-  - list:
-    - {fileID: 4266211122894541224, guid: 13a58094ece0d428aa1fb3dc43b10231, type: 3}
-  - list:
-    - {fileID: 2987057698274208192, guid: 1a8c99a7749ff492da5e836d6a842fa3, type: 3}
-  - list:
-    - {fileID: 838465013704613396, guid: af22ca824aa3d4d838246b1a70e78bb2, type: 3}
-  - list:
-    - {fileID: 2963599001124346813, guid: 138de755c8f20428ca24bf5ec6449332, type: 3}
-  - list:
-    - {fileID: 4810094507196567367, guid: da710e6d4214b4ba8b8adbc5d57860b5, type: 3}
+  template: {fileID: 7355625091129797057, guid: 2d3ccd9be728547a4b85f9aa4fe84073,
+    type: 3}
+  colours: []
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2085,7 +1975,7 @@ Transform:
   - {fileID: 65628372}
   - {fileID: 298627520}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &978101490
 MonoBehaviour:
@@ -2100,7 +1990,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnerName: Green Dropper
-  chemical: {fileID: 885996066693332370, guid: 62b8c8a3e651f49c8add66bac3438474, type: 3}
+  prefab: {fileID: 7355625091129797057, guid: 2d3ccd9be728547a4b85f9aa4fe84073, type: 3}
+  spawnColour:
+    r: 0
+    g: 3
+    b: 0
   watcherPos: {x: 1.3125, y: -0.65, z: -8.2}
   spawnPos: {x: 1.3125, y: 0, z: -8.2}
   cooldown: 600
@@ -7184,7 +7078,7 @@ Transform:
   - {fileID: 1602386145}
   - {fileID: 2102238250}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1220053480
 GameObject:
@@ -7530,8 +7424,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnerName: Bench
-  chemical: {fileID: 7355625091129797057, guid: 2d3ccd9be728547a4b85f9aa4fe84073,
-    type: 3}
+  prefab: {fileID: 7355625091129797057, guid: 2d3ccd9be728547a4b85f9aa4fe84073, type: 3}
+  spawnColour:
+    r: 0
+    g: 0
+    b: 0
   watcherPos: {x: -3.2, y: -0.64, z: -0.9}
   spawnPos: {x: -3.2, y: -0.64, z: -0.9}
   cooldown: 600
@@ -7547,7 +7444,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1427741490
 GameObject:
@@ -7853,7 +7750,7 @@ RectTransform:
   m_Children:
   - {fileID: 1807487969}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8210,7 +8107,7 @@ Transform:
   - {fileID: 186992334}
   - {fileID: 1675922741}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1794028782
 MonoBehaviour:
@@ -8225,8 +8122,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnerName: Blue Dropper
-  chemical: {fileID: 7655981103916216736, guid: 0edaa4b429fd64a14a45c9045419b95a,
-    type: 3}
+  prefab: {fileID: 7355625091129797057, guid: 2d3ccd9be728547a4b85f9aa4fe84073, type: 3}
+  spawnColour:
+    r: 0
+    g: 0
+    b: 3
   watcherPos: {x: -0.5, y: -0.65, z: -8.2}
   spawnPos: {x: -0.5, y: 0, z: -8.2}
   cooldown: 600
@@ -8368,7 +8268,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1850294989 stripped
 Transform:
@@ -8700,15 +8600,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1951779496}
-  m_LocalRotation: {x: -0, y: 0.070093505, z: -0, w: 0.9975405}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0.746, y: -0.77, z: -3.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 963194228}
   - {fileID: 1620155708}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 8.0390005, z: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!143 &1951779498
 CharacterController:
   m_ObjectHideFlags: 0
@@ -8913,7 +8813,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0.59000033, y: 0.9391379, z: 1, w: 3.2430725e-12}
+  m_BoundingSphereOverride: {x: 0, y: 1.2128383e-34, z: 4.5822e-41, w: -1}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 1
   m_ShadowAngle: 0
@@ -9194,7 +9094,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 4.2e-44}
+  m_BoundingSphereOverride: {x: 0, y: 3.3301445e-36, z: 4.5822e-41, w: -1}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 1
   m_ShadowAngle: 0
@@ -9292,6 +9192,8 @@ MonoBehaviour:
   occupation: {fileID: 0}
   isEntry: 1
   isExit: 1
+  template: {fileID: 7355625091129797057, guid: 2d3ccd9be728547a4b85f9aa4fe84073,
+    type: 3}
 --- !u!23 &159896143142626162
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9497,6 +9399,8 @@ MonoBehaviour:
   occupation: {fileID: 0}
   isEntry: 1
   isExit: 1
+  template: {fileID: 7355625091129797057, guid: 2d3ccd9be728547a4b85f9aa4fe84073,
+    type: 3}
 --- !u!23 &2207651875550393102
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9686,6 +9590,8 @@ MonoBehaviour:
   occupation: {fileID: 0}
   isEntry: 1
   isExit: 1
+  template: {fileID: 7355625091129797057, guid: 2d3ccd9be728547a4b85f9aa4fe84073,
+    type: 3}
 --- !u!4 &3940004852533100791
 Transform:
   m_ObjectHideFlags: 0
@@ -9893,7 +9799,7 @@ Transform:
   - {fileID: 2511370143547693091}
   - {fileID: 3940004852533100791}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5697995163045979891
 GameObject:
@@ -9907,7 +9813,7 @@ GameObject:
   - component: {fileID: 8356239238911538156}
   - component: {fileID: 6058366352896313126}
   - component: {fileID: 681848393441836684}
-  - component: {fileID: 97938478}
+  - component: {fileID: 5697995163045979892}
   m_Layer: 0
   m_Name: Microwave
   m_TagString: Untagged
@@ -9915,6 +9821,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5697995163045979892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5697995163045979891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b73e7ee4ccd364a9dbb122d98c7dbc24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slotPositions:
+  - {fileID: 1054909359887816812}
+  autoRun: 0
+  runtime: 5
+  running: 0
+  template: {fileID: 7355625091129797057, guid: 2d3ccd9be728547a4b85f9aa4fe84073,
+    type: 3}
+  colours: []
 --- !u!33 &5728766089464873411
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14790,8 +14716,9 @@ Transform:
   - {fileID: 3722333640747343540}
   - {fileID: 8602102362785549932}
   - {fileID: 2067232217497273295}
+  - {fileID: 558844318}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -135, z: 0}
 --- !u!23 &7431158996550150528
 MeshRenderer:

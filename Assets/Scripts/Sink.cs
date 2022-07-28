@@ -1,0 +1,31 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Sink : CrafterObject
+{
+    public override void ExecuteCraft()
+    {
+        ChemicalColour output;
+
+        GetColours();
+
+        if (colours.Count == 1)
+        {
+            if (colours[0].b != 3)
+            {
+                output = new ChemicalColour(colours[0].r, colours[0].g, colours[0].b + 1);
+            }
+            else
+            {
+                output = new ChemicalColour(colours[0].r - 1, colours[0].g - 1, colours[0].b);
+            }
+        }
+        else
+        {
+            return;
+        }
+
+        SetSlot(0, output);
+    }
+}

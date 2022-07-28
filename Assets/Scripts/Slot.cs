@@ -12,26 +12,29 @@ public class Slot : MonoBehaviour
     public bool isEntry = true;
     public bool isExit = true;
 
+    public GameObject template;
+
     public void ClearSlot()
     {
         occupation = null;
         occupied = false;
+        if (transform.childCount != 0) {
+            Destroy(transform.GetChild(0).gameObject);
+        }
     }
 
-    public void RegenSlot()
+    public void AssignSlot(GameObject occupation)
     {
-        GameObject newFlask = Instantiate(occupation);
-        newFlask.transform.parent = transform;
-        newFlask.transform.position = transform.position;
-        newFlask.transform.localRotation = Quaternion.identity;
-        newFlask.GetComponent<Rigidbody>().isKinematic = true;
-        newFlask.GetComponent<Collider>().enabled = false;
-        SetSlot(newFlask);
-    }
-
-    public void SetSlot(GameObject prefab)
-    {
-        occupation = prefab;
+        this.occupation = occupation;
         occupied = true;
+    }
+
+    public void RegenerateSlot()
+    {
+        GameObject chemical = Instantiate(occupation, transform.position, Quaternion.identity);
+        chemical.transform.parent = transform;
+
+        chemical.GetComponent<Rigidbody>().isKinematic = true;
+        chemical.GetComponent<Collider>().enabled = false;
     }
 }
