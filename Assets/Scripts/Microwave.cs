@@ -7,13 +7,13 @@ public class Microwave : CrafterObject
 {
     public override void ExecuteCraft()
     {
-        ChemicalColour output;
+        ChemicalColor output;
 
         GetColours();
 
         if (colours.Count == 1)
         {
-            output = new ChemicalColour(colours[0].r + 1, colours[0].g + 1, colours[0].b + 1);
+            output = new ChemicalColor(colours[0].r + 1, colours[0].g + 1, colours[0].b + 1);
         }
         else
         {

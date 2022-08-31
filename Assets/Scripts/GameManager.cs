@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
 }
 
 [Serializable]
-public struct ChemicalColour
+public struct ChemicalColor
 {
     public int r;
     public int g;
@@ -30,7 +30,7 @@ public struct ChemicalColour
         b = Mathf.Clamp(b, 0, 3);
     }
 
-    public ChemicalColour(int r, int g, int b)
+    public ChemicalColor(int r, int g, int b)
     {
         this.r = r;
         this.g = g;
@@ -62,13 +62,12 @@ public abstract class CrafterObject : MonoBehaviour
 
     public GameObject template;
 
-    public List<ChemicalColour> colours;
+    public List<ChemicalColor> colours;
 
     void Start()
     {
         foreach (GameObject slot in slotPositions)
         {
-            if (name == "Sink") Debug.Log("testing slot");
             if (slot.GetComponent<Slot>().isEntry) startCount++;
         }
     }
@@ -99,8 +98,6 @@ public abstract class CrafterObject : MonoBehaviour
             occupiedCount = 0;
             if (slot.isEntry && slot.occupied) occupiedCount++;
         }
-        if (name == "Sink") Debug.Log("occupied count: " + occupiedCount);
-        if (name == "Sink") Debug.Log("start count: " + startCount);
 
         if (occupiedCount == startCount)
         {
@@ -120,7 +117,7 @@ public abstract class CrafterObject : MonoBehaviour
 
     public void GetColours()
     {
-        colours = new List<ChemicalColour>();
+        colours = new List<ChemicalColor>();
 
         foreach(GameObject slotPosition in slotPositions)
         {
@@ -131,7 +128,7 @@ public abstract class CrafterObject : MonoBehaviour
         }
     }
 
-    public void SetSlot(int index, ChemicalColour color)
+    public void SetSlot(int index, ChemicalColor color)
     {
         Slot slot = slotPositions[index].GetComponent<Slot>();
         GameObject chemical = Instantiate(template, slot.transform.position, Quaternion.identity);

@@ -10,7 +10,7 @@ public class ChemicalItem : MonoBehaviour
     public Material baseMat;
 
     [SerializeField]
-    public ChemicalColour color;
+    public ChemicalColor color;
 
     void OnValidate()
     {
@@ -35,6 +35,6 @@ public class ChemicalItem : MonoBehaviour
             liquidMaterial = new Material(baseMat);
             liquidMaterial.name = "liquid";
         }
-        liquid.GetComponent<Renderer>().material.color = matColor * 3;
+        liquid.GetComponent<Renderer>().material.color = matColor * 2;
     }
 }

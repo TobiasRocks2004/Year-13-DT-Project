@@ -146,7 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particlePrefab: {fileID: 2401819600282200021, guid: 6000d4ea0fae4407a891dada9ff6a06b,
     type: 3}
-  puddleMaterial: {fileID: 0}
+  puddleMaterial: {fileID: 2100000, guid: 8c8d5f7a2bc3c4622a9aa9d96a6df9f1, type: 2}
   layerMask:
     serializedVersion: 2
     m_Bits: 1335

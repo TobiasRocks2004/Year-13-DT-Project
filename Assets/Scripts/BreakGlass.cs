@@ -13,6 +13,8 @@ public class BreakGlass : MonoBehaviour
     float prevSpeed = 0;
     float currentSpeed = 0;
 
+    private ChemicalColor color;
+
     Vector3 hitPos;
 
     void Awake()
@@ -30,9 +32,13 @@ public class BreakGlass : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(transform.position + Vector3.up, Vector3.down, out hit, Mathf.Infinity, layerMask))
             {
-                hitPos = hit.point;
-                GameObject puddles = Instantiate(particlePrefab, hit.point, Quaternion.identity);
-                puddles.GetComponentsInChildren<ParticleSystemRenderer>()[1].material = puddleMaterial;
+                GameObject particles = Instantiate(particlePrefab, hit.point, Quaternion.identity);
+
+                Color matColor = new Color((float)color.r / 3, (float)color.g / 3, (float)color.b / 3, 1);
+
+                Material puddleMat = transform.GetChild(0).GetComponent<Renderer>().material;
+
+                particles.transform.GetChild(1).GetComponent<ParticleSystemRenderer>().material = puddleMat;
 
                 Destroy(gameObject);
             }

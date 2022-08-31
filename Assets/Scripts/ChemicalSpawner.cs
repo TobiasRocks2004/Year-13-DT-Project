@@ -8,7 +8,7 @@ public class ChemicalSpawner : MonoBehaviour
 
     public GameObject prefab;
     [SerializeField]
-    public ChemicalColour spawnColour;
+    public ChemicalColor spawnColour;
     public Vector3 watcherPos;
     public Vector3 spawnPos;
     public int cooldown;
