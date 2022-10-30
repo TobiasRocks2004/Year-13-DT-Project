@@ -8,6 +8,8 @@ public class BreakGlass : MonoBehaviour
     public Material puddleMaterial;
     public LayerMask layerMask;
 
+    public float breakSpeed;
+
     Rigidbody rb;
 
     float prevSpeed = 0;
@@ -27,7 +29,7 @@ public class BreakGlass : MonoBehaviour
         prevSpeed = currentSpeed;
         currentSpeed = rb.velocity.magnitude;
 
-        if (prevSpeed > 5 && currentSpeed < 0.5f)
+        if (prevSpeed > breakSpeed && currentSpeed < 0.5f)
         {
             RaycastHit hit;
             if (Physics.Raycast(transform.position + Vector3.up, Vector3.down, out hit, Mathf.Infinity, layerMask))

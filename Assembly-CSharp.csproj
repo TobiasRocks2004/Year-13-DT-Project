@@ -65,17 +65,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BreakGlass.cs" />
-    <Compile Include="Assets\Scripts\BunsenBurner.cs" />
     <Compile Include="Assets\Scripts\ChemicalItem.cs" />
     <Compile Include="Assets\Scripts\ChemicalSpawner.cs" />
+    <Compile Include="Assets\Scripts\Crafters\Blender.cs" />
+    <Compile Include="Assets\Scripts\Crafters\BunsenBurner.cs" />
+    <Compile Include="Assets\Scripts\Crafters\Exporter.cs" />
+    <Compile Include="Assets\Scripts\Crafters\Microwave.cs" />
+    <Compile Include="Assets\Scripts\Crafters\Sink.cs" />
     <Compile Include="Assets\Scripts\DestroyWhenDone.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Microwave.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Scripts\PlayParticleWhileRunning.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\SceneChanger.cs" />
-    <Compile Include="Assets\Scripts\Sink.cs" />
     <Compile Include="Assets\Scripts\Slot.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />

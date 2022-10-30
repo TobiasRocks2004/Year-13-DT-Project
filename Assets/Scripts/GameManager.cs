@@ -2,7 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEditor;
+using TMPro;
 
 // your classic game manager
 public class GameManager : MonoBehaviour
@@ -10,9 +12,74 @@ public class GameManager : MonoBehaviour
     public List<ChemicalSpawner> spawners = new List<ChemicalSpawner>();
     public List<CrafterObject> crafters = new List<CrafterObject>();
 
+    public float startTime = 180;
+    [HideInInspector]
+    public int score;
+    [HideInInspector]
+    public float timeRemaining;
+
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI timeRemainingText;
+
+    [HideInInspector]
+    public bool gameOver;
+    public GameObject gameOverScreen;
+    public GameObject[] deactivateOnLoss;
+
     void Start()
     {
         Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Flasks"), LayerMask.NameToLayer("Slot"));
+
+        gameOver = false;
+        score = 0;
+        timeRemaining = startTime;
+    }
+
+    void Update()
+    {
+        scoreText.text = "Score: " + score;
+
+        if (timeRemaining <= 0)
+        {
+            timeRemaining = 0;
+            if (!gameOver)
+            {
+                EndGame();
+                gameOver = true;
+            }
+        }
+        else
+        {
+            TimeSpan time = TimeSpan.FromSeconds(timeRemaining);
+            timeRemainingText.text = "Time remaining: " + time.ToString(@"mm\:ss");
+        }
+
+        timeRemaining -= Time.deltaTime;
+
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene("Main");
+    }
+
+    public void EndGame()
+    {
+        gameOverScreen.SetActive(true);
+        foreach(GameObject thing in deactivateOnLoss)
+        {
+            thing.SetActive(false);
+        }
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
 
@@ -39,6 +106,15 @@ public struct ChemicalColor
         Clamp();
     }
 
+    public static ChemicalColor GenerateRandom()
+    {
+        int randR = UnityEngine.Random.Range(0, 4);
+        int randG = UnityEngine.Random.Range(0, 4);
+        int randB = UnityEngine.Random.Range(0, 4);
+
+        return new ChemicalColor(randR, randG, randB);
+    }
+
     public void Print()
     {
         Debug.Log("r: " + r + ", g: " + g + ", b: " + b);
@@ -62,7 +138,7 @@ public abstract class CrafterObject : MonoBehaviour
 
     public GameObject template;
 
-    public List<ChemicalColor> colours;
+    public List<ChemicalColor> colors;
 
     void Start()
     {
@@ -91,12 +167,16 @@ public abstract class CrafterObject : MonoBehaviour
 
     public void CheckIfValid()
     {
+        occupiedCount = 0;
+
         foreach (GameObject slotObject in slotPositions)
         {
             Slot slot = slotObject.GetComponent<Slot>();
 
-            occupiedCount = 0;
-            if (slot.isEntry && slot.occupied) occupiedCount++;
+            if (slot.isEntry && slot.occupied)
+            {
+                occupiedCount++;
+            }
         }
 
         if (occupiedCount == startCount)
@@ -115,15 +195,15 @@ public abstract class CrafterObject : MonoBehaviour
         timer = 0;
     }
 
-    public void GetColours()
+    public void GetColors()
     {
-        colours = new List<ChemicalColor>();
+        colors = new List<ChemicalColor>();
 
         foreach(GameObject slotPosition in slotPositions)
         {
             if (slotPosition.GetComponent<Slot>().occupation != null)
             {
-                colours.Add(slotPosition.GetComponent<Slot>().occupation.GetComponent<ChemicalItem>().color);
+                colors.Add(slotPosition.GetComponent<Slot>().occupation.GetComponent<ChemicalItem>().color);
             }
         }
     }

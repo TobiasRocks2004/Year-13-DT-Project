@@ -95,15 +95,36 @@ public class PlayerController : MonoBehaviour
 
                 else if (hitObject.layer == LayerMask.NameToLayer("Microwave Door") && heldObject == null)
                 {
+                    // toggle microwave door state
                     if (hitObject.GetComponent<Transform>().rotation.y != 0)
                     {
+                        // close door
                         hitObject.GetComponent<Animator>().SetTrigger("Close");
-                        hitObject.GetComponentInParent<CrafterObject>().CheckIfValid();
+                        hitObject.GetComponentInParent<Microwave>().CheckIfValid();
                     }
                     else
                     {
+                        // open door
                         hitObject.GetComponent<Animator>().SetTrigger("Open");
-                        hitObject.GetComponentInParent<CrafterObject>().StopTimer();
+                        hitObject.GetComponentInParent<Microwave>().StopTimer();
+                    }
+                }
+
+
+
+                else if (hitObject.layer == LayerMask.NameToLayer("Button") && heldObject == null)
+                {
+                    // toggle blender
+
+                    Blender blender = hitObject.GetComponentInParent<Blender>();
+
+                    if (!blender.running)
+                    {
+                        blender.CheckIfValid();
+                    }
+                    else
+                    {
+                        blender.StopTimer();
                     }
                 }
 
@@ -111,13 +132,17 @@ public class PlayerController : MonoBehaviour
 
                 else if (hitObject.layer == LayerMask.NameToLayer("Slot"))
                 {
+                    //basic slot functionality
+
                     Slot slot = hitObject.GetComponent<Slot>();
                     if (!slot.occupied && slot.isEntry && heldObject != null)
                     {
+                        // empty slot? place it in
                         PlaceObjectInSlot(slot);
                     }
                     else if (slot.occupied && slot.isExit && heldObject == null)
                     {
+                        // full slot? take it out
                         GetObjectInSlot(slot);
                     }
                 }
